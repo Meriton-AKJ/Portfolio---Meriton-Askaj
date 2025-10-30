@@ -78,7 +78,7 @@ header {
 #btn-contact-nav:hover {
   background: #20e20b;
   color: #000;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -88,12 +88,6 @@ footer {
   padding: 2rem 4rem;
   font-family: "Roboto Mono", monospace;
   border-top: 1px solid #ddd; /* ligne de séparation */
-}
-
-footer h4,
-footer h5 {
-  font-family: "Space Grotesk", sans-serif;
-  margin-bottom: 0.8rem;
 }
 
 footer p {
@@ -139,4 +133,63 @@ footer > p {
   text-align: center;
   font-size: 0.9rem;
   color: #555;
+}
+
+
+/* Section 1 - Introduction */
+#introduction{
+  display: flex;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.intro-meriton h2{
+  padding-bottom: 1rem;
+}
+
+#intro-recherche-stage{
+  color: #3da531cb;
+  border: 1px solid black;
+}
+
+.btn-intro-meriton{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.btn-intro-meriton a{
+  text-decoration: none;
+}
+
+#btn-intro-projets {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: transform 0.9s ease; /* transition pour le hover */
+}
+
+#btn-intro-projets:hover {
+  background: #555;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+#btn-intro-contact{
+  color: #000;
+  border: 1px solid #55555545;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+#btn-intro-contact:hover{
+  background-color:#20e20b;
+  color: #000;
+  border: 1px solid black;
+}
+
+#langages-span{
+  color: #3da531cb;
 }
