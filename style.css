@@ -109,6 +109,10 @@ footer p {
   margin-bottom: 2rem;
 }
 
+.footer-category h4{
+  padding-bottom: 0.5rem;
+}
+
 /* Footer categories */
 .footer-category ul {
   list-style: none;
