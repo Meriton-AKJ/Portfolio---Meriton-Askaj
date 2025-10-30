@@ -8,12 +8,18 @@
 body {
   background-color: #fff;
   color: #000;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 /* Fonts spécifiques */
-h1, h2, h3, h4, nav, a, button {
-  font-family: 'Space Grotesk', sans-serif;
+h1,
+h2,
+h3,
+h4,
+nav,
+a,
+button {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* HEADER */
@@ -22,7 +28,7 @@ header {
   justify-content: space-between; /* espace entre logo et nav */
   align-items: center; /* aligne verticalement */
   padding: 1rem 2rem; /* marges internes */
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1); /* optionnel pour le relief */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* optionnel pour le relief */
 }
 
 /* LOGO */
@@ -31,8 +37,12 @@ header {
   font-weight: 700;
   text-decoration: none;
   color: #000;
+  transition: transorm 0.9s ease; /* transition pour le hover */
 }
 
+#btn-logo-nav:hover{
+  color: #20e20b;
+}
 /* NAVIGATION */
 .nav-bar {
   display: flex;
@@ -52,14 +62,81 @@ header {
   font-weight: 500;
 }
 
+
+.nav-bar a:hover {
+  color: #20e20b;
+}
+
 #btn-contact-nav {
   background: #000;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  transition: background 0.3s; /* transition pour la recharge de page et le hover */
+  transition: transform 0.9s ease; /* transition pour le hover */
 }
 
 #btn-contact-nav:hover {
-  background: #333;
+  background: #20e20b;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #fff; /* même fond que la nav */
+  color: #000;
+  padding: 2rem 4rem;
+  font-family: "Roboto Mono", monospace;
+  border-top: 1px solid #ddd; /* ligne de séparation */
+}
+
+footer h4,
+footer h5 {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Intro Footer */
+.intro-footer {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Footer container - grid */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer categories */
+.footer-category ul {
+  list-style: none;
+}
+
+.footer-category ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-category ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.footer-category ul li a:hover {
+  color: #20e20b;
+}
+
+/* p enfants direct du footer ( droits réservés ) */
+footer > p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
 }
