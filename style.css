@@ -40,7 +40,7 @@ header {
   transition: transorm 0.9s ease; /* transition pour le hover */
 }
 
-#btn-logo-nav:hover{
+#btn-logo-nav:hover {
   color: #20e20b;
 }
 /* NAVIGATION */
@@ -61,7 +61,6 @@ header {
   color: #000;
   font-weight: 500;
 }
-
 
 .nav-bar a:hover {
   color: #20e20b;
@@ -109,7 +108,7 @@ footer p {
   margin-bottom: 2rem;
 }
 
-.footer-category h4{
+.footer-category h4 {
   padding-bottom: 0.5rem;
 }
 
@@ -139,31 +138,30 @@ footer > p {
   color: #555;
 }
 
-
 /* Section 1 - Introduction */
-#introduction{
+#introduction {
   display: flex;
   text-align: center;
   padding: 2rem 4rem;
 }
 
-.intro-meriton h2{
+.intro-meriton h2 {
   padding-bottom: 1rem;
 }
 
-#intro-recherche-stage{
+#intro-recherche-stage {
   color: #3da531cb;
   border: 1px solid black;
 }
 
-.btn-intro-meriton{
+.btn-intro-meriton {
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding-top: 2rem;
 }
 
-.btn-intro-meriton a{
+.btn-intro-meriton a {
   text-decoration: none;
 }
 
@@ -181,19 +179,68 @@ footer > p {
   transform: scale(1.05);
 }
 
-#btn-intro-contact{
+#btn-intro-contact {
   color: #000;
   border: 1px solid #55555545;
   border-radius: 6px;
   padding: 0.5rem 1rem;
 }
 
-#btn-intro-contact:hover{
-  background-color:#20e20b;
+#btn-intro-contact:hover {
+  background-color: #20e20b;
   color: #000;
   border: 1px solid black;
 }
 
-#langages-span{
+#langages-span {
   color: #3da531cb;
+}
+
+/* Acceuil -> projets */
+
+#projets-acceuil {
+  padding: 2rem 4rem;
+}
+
+#projets-acceuil a {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #20e20b;
+}
+
+#projets-acceuil a:hover{
+  color: #20e20b;
+  border: 1px solid white;
+}
+
+.projets-meriton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  text-align: center;
+  padding: 2rem 3rem;
+  gap: 2rem;
+}
+
+.selection-projets-acceuil {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selection-projets-acceuil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px #20e20b;
+}
+
+.selection-projets-acceuil img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
