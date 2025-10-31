@@ -336,3 +336,45 @@ footer > p {
   color: #d4af37;
   font-size: 2rem;
 }
+
+.btn-intro-meriton{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.btn-intro-meriton a{
+  text-decoration: none;
+}
+
+#btn-projets{
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 2px solid #d4af37;
+  transition: transform 0.9s ease; /* transition pour le hover */
+}
+
+#btn-projets:hover {
+  background: #d4af37;
+  color: #ffffff;
+  border: 2px solid #000000;
+  transform: scale(1.05);
+}
+
+#btn-competences{
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 2px solid #d4af37;
+  transition: transform 0.9s ease; /* transition pour le hover */
+}
+
+#btn-competences:hover {
+  background: #d4af37;
+  color: #ffffff;
+  border: 2px solid #000000;
+  transform: scale(1.05);
+}
+
