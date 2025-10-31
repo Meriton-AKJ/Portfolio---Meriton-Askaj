@@ -1,0 +1,315 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Lora", serif;
+}
+
+/* Fonts spécifiques */
+h1,
+h2,
+h3,
+h4,
+nav,
+a,
+button {
+  font-family: "Gloock", serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between; /* espace entre logo et nav */
+  align-items: center; /* aligne verticalement */
+  padding: 1rem 2rem; /* marges internes */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* optionnel pour le relief */
+}
+
+/* LOGO */
+#btn-logo-nav {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  transition: transorm 0.9s ease; /* transition pour le hover */
+}
+
+#btn-logo-nav:hover {
+  color: #d4af37;
+}
+/* NAVIGATION */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-bar a:hover {
+  color: #d4af37;
+}
+
+#btn-contact-nav {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: transform 0.9s ease; /* transition pour le hover */
+}
+
+#btn-contact-nav:hover {
+  background: #d4af37;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background-color: #fff; /* même fond que la nav */
+  color: #000;
+  padding: 2rem 4rem;
+  font-family: "Roboto Mono", monospace;
+  border-top: 1px solid #ddd; /* ligne de séparation */
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Intro Footer */
+.intro-footer {
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #d4af3750;
+  border-radius: 12px;
+}
+
+.intro-footer a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0.2rem;
+}
+
+.intro-footer a:hover {
+  background-color: #d4af37;
+  color: #f9f9f9;
+}
+
+/* Footer container - grid */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.footer-category h4 {
+  padding-bottom: 0.5rem;
+}
+
+/* Footer categories */
+.footer-category ul {
+  list-style: none;
+}
+
+.footer-category ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-category ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.footer-category ul li a:hover {
+  color: #d4af37;
+}
+
+/* p enfants direct du footer ( droits réservés ) */
+footer > p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Intro de plus d'info */
+
+#intro-plusinfos {
+  padding: 2rem 4rem;
+  justify-content: center;
+  text-align: center;
+}
+
+#intro-plusinfos h2 {
+  padding-bottom: 1rem;
+}
+
+#comment-me-contacter {
+  padding: 2rem 4rem;
+  background-color: #f9f9f9;
+}
+
+#comment-me-contacter h2 {
+  padding-bottom: 1rem;
+}
+
+.comment-me-contacter-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  padding: 2rem 3rem;
+  gap: 2rem;
+}
+
+.mes-links {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mes-links:hover {
+  box-shadow: 0 0 10px #d4af37;
+  transform: scale(1.1);
+}
+
+.mes-links h4 {
+  padding-bottom: 1rem;
+}
+
+.mes-links h4:hover {
+  color: #d4af37;
+}
+
+.mes-links a {
+  text-decoration: none;
+  color: #aea074;
+}
+
+/* Formations & Certifications */
+
+#diplomes {
+  padding: 2rem 4rem;
+}
+
+#diplomes h2 {
+  text-align: right;
+  padding-bottom: 2rem;
+}
+
+.cartes-diplomes {
+  padding: 1rem;
+  border: 1px solid #d4af37;
+  margin: 1rem;
+}
+
+/* Mes travaux */
+
+#travail {
+  padding: 2rem 4rem;
+  background-color: #f9f9f9;
+}
+
+#travail h2 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.mes-travaux {
+  padding: 1rem;
+  border: 1px solid #d4af37;
+  margin: 1rem;
+  text-align: right;
+}
+
+/* Mes disponibilités */
+
+#disponible{
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+#disponible h2{
+  padding-bottom: 1rem;
+}
+
+.quel-stage{
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 2rem;
+  text-align: center;
+}
+
+.convention-stage{
+  padding: 1rem;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.convention-stage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px #d4af37;
+}
+
+.convention-stage h4{
+  padding-bottom: 1rem;
+}
+
+.convention-stage h4:hover{
+  color: #d4af37;
+}
+
+.btn-dispo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.btn-dispo a {
+  text-decoration: none;
+}
+
+#btn-intro-projets {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 2px solid #d4af37;
+  transition: transform 0.9s ease; /* transition pour le hover */
+}
+
+#btn-intro-projets:hover {
+  background: #d4af37;
+  color: #000000;
+  border: 2px solid #000000;
+  transform: scale(1.05);
+}
