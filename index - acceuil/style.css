@@ -96,8 +96,23 @@ footer p {
 
 /* Intro Footer */
 .intro-footer {
+  padding: 2rem 4rem;
   margin-bottom: 2rem;
   text-align: center;
+  background-color: #21e20b50;
+  border-radius: 12px;
+}
+
+.intro-footer a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0.2rem;
+}
+
+.intro-footer a:hover {
+  background-color: #20e20b;
+  color:#f9f9f9;
 }
 
 /* Footer container - grid */
@@ -200,6 +215,7 @@ footer > p {
 
 #projets-acceuil {
   padding: 2rem 4rem;
+  background-color: #f9f9f9;
 }
 
 #projets-acceuil a {
@@ -212,7 +228,7 @@ footer > p {
   border: 1px solid #20e20b;
 }
 
-#projets-acceuil a:hover{
+#projets-acceuil a:hover {
   color: #20e20b;
   border: 1px solid white;
 }
