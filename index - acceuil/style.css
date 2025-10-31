@@ -256,6 +256,10 @@ footer > p {
   box-shadow: 0 8px 20px #20e20b;
 }
 
+.selection-projets-acceuil h3:hover{
+  color: #20e20b;
+} 
+
 .selection-projets-acceuil img {
   width: 100%;
   height: auto;
