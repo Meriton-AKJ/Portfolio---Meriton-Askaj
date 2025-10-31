@@ -19,7 +19,7 @@ h4,
 nav,
 a,
 button {
-  font-family: 'Nosifer', cursive;
+  font-family: 'Bangers', cursive;
 }
 
 /* HEADER */
@@ -185,6 +185,9 @@ footer > p {
 .selection-projets-acceuil:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px #e20b0b;
+}
+.selection-projets-acceuil h3{
+  padding: 1rem;
 }
 
 .selection-projets-acceuil h3:hover{
