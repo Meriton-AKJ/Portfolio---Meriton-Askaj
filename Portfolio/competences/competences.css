@@ -309,3 +309,185 @@ footer > p {
   height: 100%;
   border-radius: 50px;
 }
+
+/* Responsive sur tel */
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #btn-logo-nav {
+    font-size: 1.3rem;
+  }
+
+  /* NAVIGATION */
+  .nav-bar {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #btn-contact-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* INTRODUCTION */
+  #introduction {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-meriton h2 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .intro-meriton p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .btn-intro-meriton {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .btn-intro-meriton a {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* COMPÉTENCES PERSO */
+  #competences-perso {
+    padding: 1.5rem 1rem;
+  }
+
+  #competences-perso h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cartes-qualites-perso {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .qualites-perso {
+    padding: 1rem;
+  }
+
+  .qualites-perso h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .qualites-perso p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* TECHNOLOGIES */
+  #section-technologies {
+    padding: 1.5rem 1rem;
+  }
+
+  #section-technologies h2 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .mes-technologies {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .langages-techno {
+    padding: 0.8rem;
+    margin: 0.3rem 0;
+  }
+
+  .langages-techno h4 {
+    font-size: 1.1rem;
+  }
+
+  .langages-techno p {
+    font-size: 0.85rem;
+  }
+
+  /* LANGUES */
+  #section-langues {
+    padding: 1.5rem 1rem;
+  }
+
+  #section-langues h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .langue {
+    margin-bottom: 1.2rem;
+  }
+
+  .langue p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .barre {
+    height: 12px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-footer {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-footer h3 {
+    font-size: 1.3rem;
+  }
+
+  .intro-footer p {
+    font-size: 0.9rem;
+  }
+
+  .intro-footer a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-category h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-category ul li {
+    font-size: 0.9rem;
+  }
+
+  footer > p {
+    font-size: 0.8rem;
+  }
+}

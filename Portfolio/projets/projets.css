@@ -8,7 +8,7 @@
 body {
   background-color: #fff;
   color: #000;
-  font-family: 'Cinzel Decorative', serif;
+  font-family: "Cinzel Decorative", serif;
 }
 
 /* Fonts spécifiques */
@@ -19,7 +19,7 @@ h4,
 nav,
 a,
 button {
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 /* HEADER */
@@ -79,7 +79,6 @@ header {
   transform: scale(1.05);
 }
 
-
 /* Intro Footer */
 .intro-footer {
   padding: 2rem 4rem;
@@ -102,7 +101,7 @@ header {
 
 .intro-footer a:hover {
   background-color: #e20b0b;
-  color:#f9f9f9;
+  color: #f9f9f9;
 }
 
 /* Footer container - grid */
@@ -151,7 +150,7 @@ footer > p {
   background-color: #f9f9f9;
 }
 
-#projets-acceuil h2{
+#projets-acceuil h2 {
   padding-bottom: 1rem;
 }
 
@@ -190,11 +189,11 @@ footer > p {
   transform: scale(1.05);
   box-shadow: 0 8px 20px #e20b0b;
 }
-.selection-projets-acceuil h3{
+.selection-projets-acceuil h3 {
   padding: 1rem;
 }
 
-.selection-projets-acceuil h3:hover{
+.selection-projets-acceuil h3:hover {
   color: #e20b0b;
 }
 
@@ -203,4 +202,117 @@ footer > p {
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+
+/* Responsive sur tel */
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #btn-logo-nav {
+    font-size: 1.3rem;
+  }
+
+  /* NAVIGATION */
+  .nav-bar {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #btn-contact-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* PROJETS */
+  #projets-acceuil {
+    padding: 1.5rem 1rem;
+  }
+
+  #projets-acceuil h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #projets-acceuil a {
+    font-size: 0.9rem;
+  }
+
+  .projets-meriton {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .selection-projets-acceuil {
+    padding: 1rem;
+  }
+
+  .selection-projets-acceuil h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .selection-projets-acceuil p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .selection-projets-acceuil img {
+    margin-bottom: 0.8rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-footer {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-footer h3 {
+    font-size: 1.3rem;
+  }
+
+  .intro-footer p {
+    font-size: 0.9rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .intro-footer a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-category h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-category ul li {
+    font-size: 0.9rem;
+  }
+
+  footer > p {
+    font-size: 0.8rem;
+  }
 }
