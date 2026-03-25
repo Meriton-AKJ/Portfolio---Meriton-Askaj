@@ -199,7 +199,9 @@ footer > p {
 
 .selection-projets-acceuil img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover; /* garde un rendu propre malgré des ratios différents */
+  object-position: center;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -271,6 +273,7 @@ footer > p {
   }
 
   .selection-projets-acceuil img {
+    height: 140px;
     margin-bottom: 0.8rem;
   }
 
