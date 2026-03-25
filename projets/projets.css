@@ -201,7 +201,7 @@ footer > p {
   width: 100%;
   height: 180px;
   object-fit: cover; /* garde un rendu propre malgré des ratios différents */
-  object-position: center;
+  object-position: top;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
