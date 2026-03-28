@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icon-MA.png">
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap"
         rel="stylesheet">
     <title>Portfolio - Meriton Askaj</title>
+    <meta name="description" content="Portfolio de Meriton Askaj, développeur web junior basé à Bruxelles. Projets React, e-commerce, hackathon et plus. Disponible pour un stage en alternance.">
 </head>
 
 <body>
     <header>
         <a href="./index.html" id="btn-logo-nav">MA</a>
+        <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
         <nav class="nav-bar">
             <ul>
                 <li><a href="./index.html">Accueil</a></li>
@@ -56,11 +59,10 @@
             </div>
 
             <div class="selection-projets-acceuil">
-                <img src="./assets/apiwilder.jpg" alt="Photo de la page d'acceuil ApiWilder" loading="lazy"
+                <img src="./assets/weatherapp.jpg" alt="Capture d'écran de l'application météo Weather App" loading="lazy"
                     decoding="async">
-                <h3>ApiWilder</h3>
-                <p>Projet de hackathon : un site dédié à une ruche, avec un système de meilleures donations pour
-                    soutenir les initiatives et suivre l'impact des contributions.</p>
+                <h3>Weather App</h3>
+                <p>Mon premier projet en React. Application météo permettant de consulter les conditions météorologiques en temps réel selon la ville souhaitée, via une API weather.</p>
             </div>
 
             <div class="selection-projets-acceuil">
@@ -139,6 +141,7 @@
         <br>
         <p>&copy; 2026 Meriton Askaj | Tous droits réservés.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

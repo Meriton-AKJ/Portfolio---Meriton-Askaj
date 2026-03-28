@@ -24,6 +24,10 @@ button {
 
 /* HEADER */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
   display: flex;
   justify-content: space-between; /* espace entre logo et nav */
   align-items: center; /* aligne verticalement */
@@ -159,7 +163,7 @@ footer > p {
 #introduction {
   display: flex;
   text-align: center;
-  padding: 2rem 4rem;
+  padding: 6rem 8rem;
 }
 
 .intro-meriton h2 {
@@ -216,7 +220,7 @@ footer > p {
 /* Acceuil -> projets */
 
 #projets-acceuil {
-  padding: 2rem 4rem;
+  padding: 5rem 6rem;
   background-color: #f9f9f9;
 }
 
@@ -226,17 +230,19 @@ footer > p {
 
 #projets-acceuil a {
   text-decoration: none;
-  display: flex;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   color: #000;
-  padding: 0.5rem 1rem;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid #20e20b;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  border: 2px solid #20e20b;
+  transition: all 0.3s ease;
 }
 
 #projets-acceuil a:hover {
-  color: #20e20b;
-  border: 1px solid white;
+  background-color: #20e20b;
+  color: #000;
 }
 
 .projets-meriton {
@@ -266,9 +272,9 @@ footer > p {
 
 .selection-projets-acceuil img {
   width: 100%;
-  height: 180px;
-  object-fit: cover; /* garde un rendu propre malgré des ratios différents */
-  object-position: top;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background-color: #f0f0f0;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -276,7 +282,7 @@ footer > p {
 /* Mes disponibilités */
 
 #disponible {
-  padding: 2rem 4rem;
+  padding: 5rem 6rem;
   text-align: center;
 }
 
@@ -340,9 +346,54 @@ footer > p {
   transform: scale(1.05);
 }
 
+/* Burger */
+#burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
 /* Responsive sur tel */
 
 @media (max-width: 768px) {
+  /* BURGER */
+  #burger {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    width: 100%;
+  }
+
+  .nav-bar.open {
+    display: flex;
+  }
+
   /* HEADER */
   header {
     flex-direction: column;
@@ -354,24 +405,7 @@ footer > p {
     font-size: 1.3rem;
   }
 
-  /* NAVIGATION */
-  .nav-bar {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
 
-  .nav-bar ul {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  #btn-contact-nav {
-    width: 100%;
-    text-align: center;
-  }
 
   /* INTRODUCTION */
   #introduction {
@@ -433,7 +467,6 @@ footer > p {
   }
 
   .selection-projets-acceuil img {
-    height: 140px;
     margin-bottom: 0.8rem;
   }
 
