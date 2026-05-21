@@ -23,7 +23,7 @@
                 <li><a href="../competences/competences.html">Compétences</a></li>
                 <li><a href="../plusinfos/plusinfos.html">Plus d'infos</a></li>
             </ul>
-            <a href="../plusinfos/plusinfos.html" id="btn-contact-nav">Me contacter</a>
+            <a href="../plusinfos/plusinfos.html" class="btn">Me contacter</a>
         </nav>
     </header>
 
@@ -32,49 +32,47 @@
             <h2>Mes projets</h2>
             <p>Projets réalisés en formation, d'apprentissage, et conceptuels</p>
             <div class="projets-meriton">
-                <div class="selection-projets-acceuil">
+                <a href="#modal-fleuriste" class="selection-projets-acceuil">
                     <img src="../assets/monbouquetpresdechezmoi.jpg"
                         alt="Logo du site e-commerce de fleur: MonBouquetPresDeChezMoi.io" loading="lazy"
                         decoding="async">
                     <h3>Site e-commerce fleuriste</h3>
                     <p>Plateforme e-commerce de vente de fleurs simple pour une personnalisation de bouquet entier, avec
                         catalogue produits dynamique et base des données.</p>
-                </div>
+                </a>
 
-                <div class="selection-projets-acceuil">
+                <a href="#modal-weather" class="selection-projets-acceuil">
                     <img src="../assets/weatherapp.jpg" alt="Capture d'écran de l'application météo Weather App"
                         loading="lazy" decoding="async">
                     <h3>Weather App</h3>
                     <p>Mon premier projet en React. Application météo permettant de consulter les conditions
                         météorologiques en temps réel selon la ville souhaitée, via une API weather.</p>
-                </div>
+                </a>
 
-                <div class="selection-projets-acceuil">
-                    <img src="../assets/apiwilder.jpg" alt="Photo de la page d'acceuil ApiWilder" loading="lazy"
+                <a href="#modal-apiwilder" class="selection-projets-acceuil">
+                    <img src="../assets/apiwilder.jpg" alt="Photo de la page d'accueil ApiWilder" loading="lazy"
                         decoding="async">
                     <h3>ApiWilder</h3>
                     <p>Projet de hackathon : un site dédié à une ruche, avec un système de meilleures donations pour
                         soutenir les initiatives et suivre l'impact des contributions.</p>
-                </div>
+                </a>
 
-                <div class="selection-projets-acceuil">
+                <a href="#modal-todolist" class="selection-projets-acceuil">
                     <img src="../assets/todolist.jpg" alt="Photo d'une to do list" loading="lazy" decoding="async">
                     <h3>To Do List</h3>
-                    <p>Une To Do List simple avec un visuel moderne pour créer de nouvelles tâches, cocher lorsqu'elles
-                        sont
-                        finie ou bien les supprimer</p>
-                </div>
+                    <p>Une To Do List simple avec un visuel moderne pour créer de nouvelles tâches, cocher lorsqu'elles sont finies ou bien les supprimer</p>
+                </a>
 
-                <div class="selection-projets-acceuil">
+                <a href="#modal-chaussures" class="selection-projets-acceuil">
                     <img src="../assets/Landing-page-chaussures.jpg" alt="Photo d'une landing page de chaussures"
                         loading="lazy" decoding="async">
                     <h3>Landing page de chaussures</h3>
                     <p>Page de destination moderne et responsive pour la vente de chaussures, avec un design épuré et
                         attrayant.</p>
-                </div>
+                </a>
 
 
-                <div class="selection-projets-acceuil">
+                <a href="#modal-hotel" class="selection-projets-acceuil">
                     <img src="../assets/app-hotel-gestion-departement.jpg"
                         alt="Photo d'une application d'hôtellerie pour la gestion des départements" loading="lazy"
                         decoding="async">
@@ -82,19 +80,117 @@
                     <h3>Application d'hôtellerie pour la gestion des départements</h3>
                     <p>Cette application facilite la communication entre les différents départements d'un hôtel.
                         Elle offre également des fonctionnalités pour les responsables et leurs employés, afin de
-                        facilité la gestion administrative. Photo prise sur freepick.com</p>
-                    </p>
-                </div>
+                        faciliter la gestion administrative. Photo prise sur freepick.com</p>
+                </a>
             </div>
-            <a href="../competences/competences.html">Quelles sont mes compétences</a>
+            <a href="../competences/competences.html" class="btn">Quelles sont mes compétences</a>
         </section>
+
+        <!-- MODALS -->
+
+        <div id="modal-fleuriste" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/monbouquetpresdechezmoi.jpg" alt="Site e-commerce fleuriste" loading="lazy">
+                <h3>Site e-commerce fleuriste</h3>
+                <p>Plateforme e-commerce de vente de fleurs avec personnalisation de bouquet entier. Le site propose un catalogue produits dynamique connecté à une base de données, permettant à l'utilisateur de composer son bouquet et de passer commande en ligne.</p>
+                <ul>
+                    <li>Catalogue produits dynamique</li>
+                    <li>Personnalisation de bouquet</li>
+                    <li>Base de données</li>
+                    <li>Interface responsive</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-weather" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/weatherapp.jpg" alt="Weather App" loading="lazy">
+                <h3>Weather App</h3>
+                <p>Premier projet React. Application météo en temps réel qui affiche les conditions météorologiques selon la ville saisie par l'utilisateur. Les données sont récupérées via une API météo externe.</p>
+                <ul>
+                    <li>Réalisé en React</li>
+                    <li>Consommation d'une API météo</li>
+                    <li>Recherche par ville</li>
+                    <li>Données en temps réel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-apiwilder" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/apiwilder.jpg" alt="ApiWilder" loading="lazy">
+                <h3>ApiWilder</h3>
+                <p>Projet réalisé en hackathon. Site dédié à une ruche avec un système de donations permettant de soutenir des initiatives environnementales et de suivre l'impact des contributions en temps réel.</p>
+                <ul>
+                    <li>Projet hackathon</li>
+                    <li>Système de donations</li>
+                    <li>Suivi de l'impact des contributions</li>
+                    <li>Travail en équipe</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-todolist" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/todolist.jpg" alt="To Do List" loading="lazy">
+                <h3>To Do List</h3>
+                <p>Application de gestion de tâches avec un visuel moderne et épuré. L'utilisateur peut créer de nouvelles tâches, les cocher comme terminées ou les supprimer.</p>
+                <ul>
+                    <li>Ajout de tâches</li>
+                    <li>Marquage comme terminé</li>
+                    <li>Suppression de tâches</li>
+                    <li>Design minimaliste</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-chaussures" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/Landing-page-chaussures.jpg" alt="Landing page de chaussures" loading="lazy">
+                <h3>Landing page de chaussures</h3>
+                <p>Page de destination moderne et responsive pour la vente de chaussures. Design épuré et attractif pensé pour convertir les visiteurs, avec une mise en avant visuelle du produit.</p>
+                <ul>
+                    <li>Design responsive</li>
+                    <li>Mise en avant produit</li>
+                    <li>HTML / CSS vanilla</li>
+                    <li>Page de destination orientée conversion</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-hotel" class="modal-overlay">
+            <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+            <div class="modal-box">
+                <a href="#projets-acceuil" class="modal-close">✕</a>
+                <img src="../assets/app-hotel-gestion-departement.jpg" alt="Application hôtellerie" loading="lazy">
+                <h3>Application d'hôtellerie</h3>
+                <p>Application facilitant la communication entre les différents départements d'un hôtel. Elle offre des fonctionnalités pour les responsables et leurs employés afin de faciliter la gestion administrative. Projet TFE — Septembre 2026.</p>
+                <ul>
+                    <li>Gestion multi-départements</li>
+                    <li>Rôles responsables / employés</li>
+                    <li>Communication interne</li>
+                    <li>TFE Septembre 2026</li>
+                </ul>
+            </div>
+        </div>
+
     </main>
 
 
     <footer>
         <div class="intro-footer">
             <h3>Meriton Askaj</h3>
-            <p>Développeur web junior en formation, passionné par la création de sites web</p>
+            <p>Développeur web junior, passionné par la création de sites web</p>
             <a href="../plusinfos/plusinfos.html">Travaillons Ensemble !</a>
         </div>
         <hr>
@@ -112,10 +208,10 @@
             <div class="footer-category">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="https://github.com/Meriton-AKJ" target="_blank" rel="noopener noreferrer">Github</a>
+                    <li><a href="https://github.com/Meriton-AKJ" target="_blank">Github</a>
                     </li>
                     <li><a href="https://linkedin.com/in/meriton-askaj-994700311" target="_blank"
-                            rel="noopener noreferrer">LinkedIn</a></li>
+                           >LinkedIn</a></li>
                     <li>
                         <p>meritonaskaj01@gmail.com</p>
                     </li>
