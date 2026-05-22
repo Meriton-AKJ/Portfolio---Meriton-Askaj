@@ -47,32 +47,81 @@
         <h2>Sélection de mes projets</h2>
         <p>Projets réalisés en formation, d'apprentissage, et conceptuels</p>
         <div class="projets-meriton">
-            <div class="selection-projets-acceuil">
+            <a href="#modal-home-fleuriste" class="selection-projets-acceuil">
                 <img src="./assets/monbouquetpresdechezmoi.jpg"
                     alt="Logo du site e-commerce de fleur: MonBouquetPresDeChezMoi.io" loading="lazy" decoding="async">
                 <h3>Site e-commerce fleuriste</h3>
                 <p>Plateforme e-commerce de vente de fleurs simple pour une personnalisation de bouquet entier, avec
                     catalogue produits dynamique et base des données.</p>
-            </div>
+            </a>
 
-            <div class="selection-projets-acceuil">
+            <a href="#modal-home-weather" class="selection-projets-acceuil">
                 <img src="./assets/weatherapp.jpg" alt="Capture d'écran de l'application météo Weather App"
                     loading="lazy" decoding="async">
                 <h3>Weather App</h3>
                 <p>Mon premier projet en React. Application météo permettant de consulter les conditions météorologiques
                     en temps réel selon la ville souhaitée, via une API weather.</p>
-            </div>
+            </a>
 
-            <div class="selection-projets-acceuil">
+            <a href="#modal-home-todolist" class="selection-projets-acceuil">
                 <img src="./assets/todolist.jpg" alt="Photo d'une to do list" loading="lazy" decoding="async">
-                <!--Photo prise sur freepick.com-->
                 <h3>To Do List</h3>
                 <p>Une To Do List simple avec un visuel moderne pour créer de nouvelles tâches, cocher lorsqu'elles sont finies ou bien les supprimer</p>
-            </div>
+            </a>
 
         </div>
         <a href="./projets/projets.html" class="btn">Voir tous mes projets</a>
     </section>
+
+    <!-- MODALS -->
+
+    <div id="modal-home-fleuriste" class="modal-overlay">
+        <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+        <div class="modal-box">
+            <a href="#projets-acceuil" class="modal-close">✕</a>
+            <img src="./assets/monbouquetpresdechezmoi.jpg" alt="Site e-commerce fleuriste" loading="lazy">
+            <h3>Site e-commerce fleuriste</h3>
+            <p>Plateforme e-commerce de vente de fleurs avec personnalisation de bouquet entier. Le site propose un catalogue produits dynamique connecté à une base de données, permettant à l'utilisateur de composer son bouquet et de passer commande en ligne.</p>
+            <ul>
+                <li>Catalogue produits dynamique</li>
+                <li>Personnalisation de bouquet</li>
+                <li>Base de données</li>
+                <li>Interface responsive</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-home-weather" class="modal-overlay">
+        <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+        <div class="modal-box">
+            <a href="#projets-acceuil" class="modal-close">✕</a>
+            <img src="./assets/weatherapp.jpg" alt="Weather App" loading="lazy">
+            <h3>Weather App</h3>
+            <p>Premier projet React. Application météo en temps réel qui affiche les conditions météorologiques selon la ville saisie par l'utilisateur. Les données sont récupérées via une API météo externe.</p>
+            <ul>
+                <li>Réalisé en React</li>
+                <li>Consommation d'une API météo</li>
+                <li>Recherche par ville</li>
+                <li>Données en temps réel</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-home-todolist" class="modal-overlay">
+        <a href="#projets-acceuil" class="modal-backdrop" aria-label="Fermer la prévisualisation"></a>
+        <div class="modal-box">
+            <a href="#projets-acceuil" class="modal-close">✕</a>
+            <img src="./assets/todolist.jpg" alt="To Do List" loading="lazy">
+            <h3>To Do List</h3>
+            <p>Application de gestion de tâches avec un visuel moderne et épuré. L'utilisateur peut créer de nouvelles tâches, les cocher comme terminées ou les supprimer.</p>
+            <ul>
+                <li>Ajout de tâches</li>
+                <li>Marquage comme terminé</li>
+                <li>Suppression de tâches</li>
+                <li>Design minimaliste</li>
+            </ul>
+        </div>
+    </div>
 
     <section id="competences-acceuil">
         <h2>Mes compétences</h2>
